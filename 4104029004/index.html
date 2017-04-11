@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  #aa{border-style:dotted;}
+  * {
+    font-size: '12pt';
+}
+  </style>
+</head>
+<body>
+    <div id=aa><h1 id=aaa>Web Programming</h1></div>
+<p>Content</p>
+<ul id=aaaaa>
+  <li id=a>HTML</li>
+  <li id=b>CSS</li>
+  <li id=c>DOM</li>
+  <li id=d>JavaScript</li>
+  <li id=e>JSP</li>
+</ul>
+<input type="button" name="bt" value="以JS修改元素內容"  onClick="changeText()">
+<input type="button" name="bt1" value="以jQuery更改CSS" onClick="changeColor()">
+<input type="button" name="bt2" value="修改標題"        onClick="changeTitle()">
+<script>
+function changeText() {
+   var c1 = document.getElementById("a");
+   a.innerHTML = "HTML5";
+   var c2 = document.getElementById("b");
+   b.innerHTML = "CSS3";
+   var objNode = document.getElementById("e");
+    var strText = "MySQL";
+    var objNewNode = document.createElement("P");
+    var objTextNode = document.createTextNode(strText);
+    objNode.appendChild(objNewNode);
+    objNewNode.appendChild(objTextNode);
+}
+function changeColor(){
+  var aaa = document.createElement("aaaaa");
+  aaaaa.setAttribute("onmouseover","this.style.color='red',this.style.fontSize = '16pt'");
+  aaaaa.setAttribute("onmouseout", "this.style.color='black',this.style.fontSize ='12pt'");
+}
+function changeTitle(){
+    var data1 = document.getElementById("aaa");
+    aaa.innerHTML = "Web Programing_4104029004";
+}
+</script>
+</body>
+</html>
